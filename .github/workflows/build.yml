@@ -1,5 +1,6 @@
 name: GitHub CI
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
@@ -8,6 +9,7 @@ on:
       - master
   release:
     types: released
+  
 
 jobs:
   build:
